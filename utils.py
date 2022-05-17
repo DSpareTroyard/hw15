@@ -185,5 +185,4 @@ def get_animal(animal_index):
         animal['colors'] = colors
         animal['date_of_birth'] = datetime.datetime.strptime(animal['date_of_birth'], "%Y-%m-%d %H:%M:%S").date()
 
-
         return animal
