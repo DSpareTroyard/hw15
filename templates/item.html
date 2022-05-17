@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ID {{ itemid }}</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>{{ animal['id'] }}</td>
+    </tr>
+    <tr>
+        <td>Возраст животного на момент прибытия в приют</td>
+        <td>{{ animal['age'] }}</td>
+    </tr>
+    <tr>
+        <td>Идентификатор животного</td>
+        <td>{{ animal['animal_id'] }}</td>
+    </tr>
+    <tr>
+        <td>Тип животного</td>
+        <td>{{ animal['type'] }}</td>
+    </tr>
+    <tr>
+        <td>Кличка</td>
+        <td>{{ animal['name'] }}</td>
+    </tr>
+    <tr>
+        <td>Порода</td>
+        <td>{{ animal['breed'] }}</td>
+    </tr>
+    <tr>
+        <td>Цвет или сочетание цветов</td>
+        <td>{{ animal['colors']|join(', ') }}</td>
+    </tr>
+    <tr>
+        <td>Дата рождения</td>
+        <td>{{ animal['date_of_birth'] }}</td>
+    </tr>
+    <tr>
+        <td>Программа</td>
+        <td>{{ animal['outcome_subtype'] }}</td>
+    </tr>
+    <tr>
+        <td>Статус животного</td>
+        <td>{{ animal['outcome_type'] }}</td>
+    </tr>
+    <tr>
+        <td>Месяц прибытия</td>
+        <td>{{ animal['outcome_month'] }}</td>
+    </tr>
+    <tr>
+        <td>Год прибытия</td>
+        <td>{{ animal['outcome_year'] }}</td>
+    </tr>
+</table>
+<a href="/">Назад</a>
+<a href="/{{itemid}}/">JSON</a>
+</body>
+</html>
